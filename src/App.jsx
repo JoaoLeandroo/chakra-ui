@@ -1,5 +1,5 @@
-import { Box, Flex, Input, Button, Checkbox } from "@chakra-ui/react"
 import { useState } from "react"
+import { Box, Input, Button } from "@chakra-ui/react"
 
 function App() {
 
@@ -16,6 +16,8 @@ function App() {
         <Input placeholder="Digite aqui" width="300px" mt="10px" bg="#0B0B3B" color="#fff" onChange={(e) => setValueInput(e.target.value) }/>
 
         <Button mt="10px" h="30px" onClick={valoresInput}>Enviar</Button>
+        <br />
+
     </Box>
   )
 }
