@@ -1,5 +1,14 @@
 import { useState } from "react"
-import { Box, Input, Button, Textarea } from "@chakra-ui/react"
+import { 
+    Box, 
+    Input, 
+    Button, 
+    Textarea,
+    Spinner,
+    Menu,
+    MenuButton,
+    MenuList,
+    MenuItem} from "@chakra-ui/react"
 
 function App() {
 
@@ -19,7 +28,26 @@ function App() {
         <br />
 
 
-      <Textarea bg="#fff" w="500px" h="200px"/>
+      <Textarea bg="#fff" w="300px" h="100px"/>
+      <Box mt="10px" display="flex" gap="10px">
+        <Spinner color="red.500"/>
+        <Spinner size="xl"/>
+      </Box>
+      <Box>
+
+      <Menu>
+          <MenuButton as={Button}>
+            Actions
+          </MenuButton>
+          <MenuList>
+            <MenuItem>Download</MenuItem>
+            <MenuItem>Create a Copy</MenuItem>
+            <MenuItem>Mark as Draft</MenuItem>
+            <MenuItem>Delete</MenuItem>
+            <MenuItem>Attend a Workshop</MenuItem>
+          </MenuList>
+        </Menu>
+      </Box>
     </Box>
   )
 }
