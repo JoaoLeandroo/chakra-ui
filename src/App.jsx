@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Box, Input, Button } from "@chakra-ui/react"
+import { Box, Input, Button, Textarea } from "@chakra-ui/react"
 
 function App() {
 
@@ -18,6 +18,8 @@ function App() {
         <Button mt="10px" h="30px" onClick={valoresInput}>Enviar</Button>
         <br />
 
+
+      <Textarea bg="#fff" w="500px" h="200px"/>
     </Box>
   )
 }
